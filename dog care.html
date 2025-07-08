@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+.care-wrapper {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.care-card {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.care-card:hover {
+  transform: translateY(-5px);
+}
+
+.care-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.care-img {
+  flex: 1 1 300px;
+}
+
+.care-info {
+  flex: 2;
+  padding: 30px;
+}
+
+.care-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.care-info p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-learn {
+  display: inline-block;
+  background: linear-gradient(135deg, #f9b233, #ff914d);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.4s ease;
+}
+
+.btn-learn:hover {
+  background: linear-gradient(135deg, #ff914d, #f9b233);
+}
+
+@media (max-width: 768px) {
+  .care-card {
+    flex-direction: column;
+  }
+
+  .care-img, .care-info {
+    width: 100%;
+  }
+
+  .care-info {
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro  </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+<section class="video-banner">
+  <video autoplay muted loop class="video-bg">
+    <source src="videos/video3.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="banner-content">
+    <h1>Dog Care</h1>
+    <p>Your trusted guide to all dog breeds and care</p>
+    <a href="dogs-breed1.html" class="banner-btn">Explore Breeds</a>
+  </div>
+</section>
+<!-- Include AOS CSS in <head> -->
+
+<header data-aos="fade-down">
+  <h1>Dog Care</h1>
+</header>
+
+  <section class="care-wrapper">
+    <div class="care-card" data-aos="zoom-in">
+      <div class="care-img">
+        <img src="img/grooming dogs.jpg" alt="Grooming">
+      </div>
+      <div class="care-info">
+        <h3>Grooming</h3>
+        <p>Regular grooming keeps your dog's coat clean, reduces shedding and prevents infections.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="care-card" data-aos="zoom-in">
+      <div class="care-img">
+        <img src="img/cleaning ears.jpg" alt="Ear Cleaning">
+      </div>
+      <div class="care-info">
+        <h3>Clean the Ears</h3>
+        <p>Keep ears dry and clean to prevent infections and irritation from wax buildup.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="care-card" data-aos="zoom-in">
+      <div class="care-img">
+        <img src="img/eye check.jpg" alt="Eyes Check">
+      </div>
+      <div class="care-info">
+        <h3>Check the Eyes</h3>
+        <p>Monitor your dog’s eyes for redness or unusual discharge to catch problems early.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- <div class="care-card" data-aos="zoom-in">
+      <div class="care-img">
+        <img src="img/dog4.jpg" alt="Paw Cleaning">
+      </div>
+      <div class="care-info">
+        <h3>Paw Cleaning</h3>
+        <p>Clean paws after walks to remove dirt, debris and harmful substances from roads.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+    </div> -->
+  </section>
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs-breed1.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- AOS Script at end of body -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!-- Carousel Container -->
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
