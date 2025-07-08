@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+</div>
+    <div class="row " style="margin:auto">
+      <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Airedale Terrier</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">United Kingdom</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Medium</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Others</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Terrier (AKC:1888 &amp; UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Smartest</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Alert, Confident, Intelligent, Outgoing</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">22-24 inches (56-61 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">50-65 pounds (23-29 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Europe</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Airedale terrier is a neat, upstanding, long-legged terrier, not exaggerated in any way. It has strong round bone and combines strength and agility, enabling it to hunt tough game. Its jaws are strong and punishing. Its gait is free. The coat is hard, dense and wiry; it lies straight and close, with some hair crinkling or waving.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Airedale Terrier (also known as the ‘Waterside Terrier’, ‘Bingley Terrier’, or slightly less modestly the ‘King of Terriers’, for its height) comes from the Airedale valley in West Yorkshire, England. It was bred by crossing the Otterhound with the Black and Tan Terrier for increased ability in Water Rat hunting competitions on the Aire River. The result was a breed with great scenting and Otter hunting skills which could pursue and retrieve game from its den. It was later crossed with the Irish Terrier and Bull Terrier. 
+ The Airedale Terrier was first brought to North America in the 1880’s. Champion Master Briar, born in 1897, is considered to be the patriarch of the breed. Airedale Terriers became renowned as messengers and search animals in World War I. President Roosevelt is quoted as saying ‘An Airedale can do anything any other dog can do and then lick the other dog, if he has to.’ John Wayne’s nickname, ‘The Duke’, was the name of his childhood Airedale Terrier, who accompanied him everywhere he went.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/AiredaleTerrier pupies.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="go-back-container">
+  <a href="dogs-breed2.html" class="go-back-link">← Back To Breed</a>
+</div>
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

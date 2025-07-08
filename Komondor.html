@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+  <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro  </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<div class="row" style="margin:auto">
+  <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Komondor</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">Hungary</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Large</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">White</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Working (AKC:1937), Guardian Dogs (UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Best guard</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Affectionate, Calm, Fearless, Gentle, Independent, Steady</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">25.5 inches (65 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">125 pounds (59 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography"></td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Komondor is a large, muscular dog, with plenty of bone and substance; it is slightly longer than tall. Its gait is light and leisurely, with long strides. Its hallmark coat is double, consisting of a dense wooly undercoat and a coarser outer coat that is wavy or curly. The undercoat is trapped in the outer coat so that it forms strong, felty, tassel-like cords. This coat helped protect the dog from the elements as well as the teeth of tough adversaries. It also helped the dog to blend in with its flock.
+The Komondor, being naturally wary of strangers, makes an excellent house guard dog. They are devoted to their master and will defend him against attack by any stranger. This trait makes it advisable that the dog only be used as a herd/flock guardian/protector, not for driving. When mature, the breed is an earnest, courageous, very faithful herd/flock guardian. While a puppy, the Komondor is playful.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Komondor is descended from Tibetan dogs. Some think the Komondor was brought to Hungary a thousand years ago by nomadic Magyars to guard large herds of cattle and sheep. However, newer studies show it came from the Cumans. The name Komondor came from the name Koman-dor, meaning “dog of the Cumans.” Komondor remains have been found in Cuman gravesites. 
+ The earliest written reference is from the 16th century. The breed spread throughout the rest of the world beginning in 1920 when it began to compete in dog shows. The Komondor, still to this day, lives for many months outdoors in all kinds of weather, as they protect their master's flocks. They do not herd the flock, but rather protect them, primarily without any human assistance. The breed was recognized by the AKC in 1937.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/Komondor pupy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="go-back-container">
+  <a href="dogs-breed3.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website .</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+  <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro   </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<div class="row" style="margin:auto">
+  <div class="container align-content-center align-items-center" id="content_item_detail">
+    <h2 id="dog_name">American stafford Staffordshire</h2>
+ <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">United States</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Medium</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Others</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Terrier (AKC:1936)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Smartest</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Attentive
+ Courageous
+ Friendly
+ Tenacious</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">17-19 inches (43-48 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">	57-67 pounds (25-30 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">North America</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">This stocky dog should be muscular, giving the impression not only of great strength for its size but also of grace and agility. Its gait is springy. Its low center of gravity helped it stay on its feet in a fight, and its nimbleness helped it avoid its opponent's teeth. Its own jaws are strong with great power. Its coat is short, close and glossy.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The American Staffordshire Terrier derived from crossing Bulldogs with an older Terrier line. They are closely related to the American Pit Bull Terrier, from whom they were bred apart in the 1960’s. The American breed was reared largely for illegal dog fighting (the ‘Pit’ in Pit Bull likely derives from fighting pits) in the United States and was recognized as a distinct breed in 1936. 
+ American Staffordshire Terriers became popular with ranchers and farmers for protection, companionship, and catching hogs and cattle. Despite its media reputation for ferociousness, the American Staffordshire Terrier is an affectionate dog which has risen to popularity as a pet. The American Staffordshire Terrier’s natural aggression is directed toward other dogs, not humans, and even this can be overcome with training. They often serve as search dogs or police dogs. Popsicle, a drug sniffing American Staffordshire Terrier, became famous for sniffing out and locating one of the largest cocaine busts in the history of the FDA.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/Australian_Shepherd. pupy jpg.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+<div class="go-back-container">
+  <a href="dogs-breed2.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog  .</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

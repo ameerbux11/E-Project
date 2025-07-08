@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+ <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo"> Furro</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<div class="row" style="margin:auto">
+  <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Eurasier</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">Germany</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Medium</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Others</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Cross Breed</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Northern Breed (UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Fluffy</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Alert
+ Alert
+ Intelligent
+ Reserved</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">20-24 inches (52-60 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">50-70 pounds (23-32 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Europe</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Eurasier is a balanced, well-constructed, medium-sized Spitz (Spitzen) type dog with prick ears. It comes in different colors: fawn, red, wolf-grey, solid black, and black and tan. All color combinations are allowed, except for pure white, white patches, and liver color. Fédération Cynologique Internationale (FCI) standards call for the Eurasier to have a thick undercoat and medium-long, loosely lying guard hair all over the body, with a short coat on the muzzle, face, ears, and front legs. The tail and the back of the front legs (feathers) and hind legs (breeches) should be covered with long hair. The coat on the Eurasier's neck should be slightly longer than on the body, but not forming a mane. The breed may have a pink, blue-black or spotted tongue.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Eurasier was developed in the '60s to be a gentle family dog and protector. German breeder Julius Wipfel began by crossing Chow Chows with Wolfspitzes (which in some countries are considered the same breed as the Keeshond). One Samoyed male also contributed to the new breed’s bloodlines. Originally called the Wolf Chow, the dogs were recognized in 1973 by the Federation Cynologique Internationale and given the name Eurasier to symbolize their combined European and Asian heritage. The dogs are popular in Germany and Switzerland but are still little known in the United States. The breed was recognized by the United Kennel Club in 1996 under the name Eurasian. The UKC categorizes it as a Northern breed, the FCI consider it a Spitz or Primitive type.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/Eurasier pupy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="go-back-container">
+  <a href="dogs-breed2.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog  Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

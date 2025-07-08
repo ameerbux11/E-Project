@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro  </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- Carousel Container -->
+<!-- <div class="hero-banner" id="banner" data-aos="fade-down">
+  <div class="banner-content">
+    <h1>Welcome to Furro</h1>
+    <p>Your trusted place to learn and care for your dog companions.</p>
+    <button>Explore Now</button>
+  </div>
+</div> -->
+
+
+<div class="contact-container">
+  
+  <!-- Left Section -->
+  <section class="contact-left" data-aos="fade-right">
+    <h2>Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <input type="hidden" name="access_key" value="6f0a33c7-cfaa-4c38-b56f-f145b7c8c522">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Right Section -->
+  <section class="contact-right" data-aos="fade-left">
+    <h2>Find Us</h2>
+    <iframe src="https://maps.google.com/maps?q=New York City&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    <p>123 Dog Lane, New York, NY</p>
+    <p>+1 (555) 123-4567</p>
+    <p>info@dogworld.com</p>
+  </section>
+
+</div>
+
+
+
+<!-- Feedback Section -->
+<section class="feedback-section" data-aos="fade-up">
+  <h2>Customer Feedback</h2>
+  <div class="feedback-cards" data-aos="fade-up">
+    <div class="feedback-card">
+      <img src="pupies/puppy1.jpg" alt="Feedback">
+      <h4>Alex Green</h4>
+      <p>"Absolutely love this website. Found the perfect breed for my family!"</p>
+    </div>
+    <div class="feedback-card">
+      <img src="pupies/puppy2.jpg" alt="Feedback">
+      <h4>Jamie Lee</h4>
+      <p>"Beautiful UI, informative pages, and great customer service."</p>
+    </div>
+    <div class="feedback-card">
+      <img src="pupies/puppy3.jpg" alt="Feedback">
+      <h4>Rita Cruz</h4>
+      <p>"Our new puppy is everything we hoped for. Thank you DogWorld!"</p>
+    </div>
+  </div>
+</section> 
+ <!-- Your page content -->
+
+<!-- Go Back link (before footer) -->
+<div class="go-back-container">
+  <a href="index.html" class="go-back-link">← Back To Home Page</a>
+</div>
+
+<!-- Footer starts -->
+<footer>
+  <!-- Footer content -->
+</footer>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog  Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs-breed1.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js">
+  // AOS.init({
+  //   duration: 4000, // Animation duration in ms
+  //   once: true      // Animate only once on scroll
+  // });
+</script>
+
+</body>
+</html>

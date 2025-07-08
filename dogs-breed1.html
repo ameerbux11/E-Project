@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+</nav>
+
+<!-- Carousel Container -->
+<section class="video-banner">
+  <video autoplay muted loop class="video-bg">
+    <source src="videos/puppy.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="banner-content">
+    <h1>Find Dogs Breeds</h1>
+    <p>Your trusted guide to all dog breeds and care</p>
+    <a href="dogs-breed1.html" class="banner-btn">Explore Breeds</a>
+  </div>
+</section>
+<header>
+  <h1>All Dog Breeds</h1>
+</header>
+
+<div class="container">
+  <!-- Sidebar Filters -->
+ <section class="filter-section">
+  <form id="filterForm" class="filter-box">
+    <h3>Filter Breeds</h3>
+
+    <div class="filter-group">
+      <label>Size</label>
+      <div>
+        <label><input type="radio" name="size" value="Small"> Small</label>
+        <label><input type="radio" name="size" value="Medium"> Medium</label>
+        <label><input type="radio" name="size" value="Large"> Large</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Character</label>
+      <div>
+        <label><input type="radio" name="character" value="Hypoallergenic"> Hypoallergenic</label>
+        <label><input type="radio" name="character" value="Fluffy"> Fluffy</label>
+        <label><input type="radio" name="character" value="Smartest"> Smartest</label>
+        <label><input type="radio" name="character" value="Best guard"> Best guard</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Color</label>
+      <div>
+        <label><input type="radio" name="color" value="White"> White</label>
+        <label><input type="radio" name="color" value="Black"> Black</label>
+        <label><input type="radio" name="color" value="Others"> Others</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Geography</label>
+      <div>
+        <label><input type="radio" name="geo" value="Asia"> Asia</label>
+        <label><input type="radio" name="geo" value="North America"> North America</label>
+        <label><input type="radio" name="geo" value="Europe"> Europe</label>
+      </div>
+    </div>
+
+    <div class="filter-buttons">
+      <button type="submit">Apply</button>
+      <button type="reset" id="resetFilter">Reset</button>
+    </div>
+  </form>
+</section>
+
+
+  <!-- Breed Gallery -->
+  <section class="gallery">
+    <div class="card" data-size="Large" data-character="Smartest" data-color="other" data-geo="North America" >
+      
+      <img src="img/Australian_Shepherd.jpg" alt="Australian_Shepherd">
+      <h4>Australian_Shepherd</h4>
+      <a href="Australian Shepherd.html">Read More</a>
+    </div>
+    <div class="card"data-size="Medium" data-character="Fluffy" data-color="others" data-geo="Asia">
+      <img src="img/ShibaInu.jpg" alt="ShibaInu">
+      <h4>ShibaInu</h4>
+      <a href="ShibaInu.html">Read More</a>
+    </div>
+    <div class="card" data-size="Large" data-character="Smartest" data-color="others" data-geo="Europe">
+
+      <img src="img/GermanShepherdDog.jpg" alt="German Shepherd">
+      <h4>German Shepherd</h4>
+      <a href="GermanShepherdDog.html">Read More</a>
+    </div>
+    <div class="card"data-size="Medium" data-character="Best guard" data-color="others" data-geo="North Amer">
+      <img src="img/OldeEnglishBulldogge.jpg" alt="Bulldog">
+      <h4>English Bulldog</h4>
+      <a href="OldeEnglish Bulldogge.html">Read More</a>
+    </div>
+    <div class="card"data-size="Size" data-character="Smartest" data-color="others" data-geo="Europe">
+      <img src="img/IcelandicSheepdog.jpg" alt="IcelandicSheepdog">
+      <h4>IcelandicSheepdog</h4>
+      <a href="IcelandicSheepdog.html">Read More</a>
+    </div>
+    <div class="card"data-size="Large" data-character="Smartest" data-color="Black" data-geo="Europe">
+      <img src="img/Rottweiler.jpg" alt="Rottweiler">
+      <h4>Rottweiler</h4>
+      <a href="Rottweiler.html">Read More</a>
+    </div>
+    <div class="card"data-size="large" data-character="Smartest" data-color="Black" data-geo="Europe">
+      <img src="img/FinnishSpitz.jpg" alt="FinnishSpitz">
+      <h4>FinnishSpitz</h4>
+      <a href="FinnishSpitz.html">Read More</a>
+    </div>
+    <div class="card"data-size="Large" data-character="Smartest" data-color="others" data-geo="Europe">
+      <img src="img/HamiltonHound.jpg" alt="HamiltonHound">
+      <h4>Hamilton Hound</h4>
+      <a href="HamiltonHound.html">Read More</a>
+    </div>
+    <div class="card"data-size="Large" data-character="Smartest" data-color="Black" data-geo="Europe">
+      <img src="img/GiantSchnauzer.jpg" alt="GiantSchnauzer">
+      <h4>GiantSchnauzerr</h4>
+      <a href="GiantSchnauzer.html">Read More</a>
+    </div>
+  </section>
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <div class="row">
+    <div class="content_paging">
+      <ul class="pagination-list">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed1.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed3.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed4.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed2.html">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs-breed1.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="script.js">
+
+  d<script>
+  document.getElementById('filterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const filters = {
+      size: formData.get('size'),
+      character: formData.get('character'),
+      color: formData.get('color'),
+      geo: formData.get('geo')
+    };
+
+    const cards = document.querySelectorAll('.gallery .card');
+
+    cards.forEach(card => {
+      const matchSize = !filters.size || card.dataset.size === filters.size;
+      const matchChar = !filters.character || card.dataset.character === filters.character;
+      const matchColor = !filters.color || card.dataset.color === filters.color;
+      const matchGeo = !filters.geo || card.dataset.geo === filters.geo;
+
+      if (matchSize && matchChar && matchColor && matchGeo) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+
+  document.getElementById('resetFilter').addEventListener('click', () => {
+    const cards = document.querySelectorAll('.gallery .card');
+    cards.forEach(card => card.style.display = 'block');
+  });
+</script>
+
+</script>
+
+</body>
+</html>

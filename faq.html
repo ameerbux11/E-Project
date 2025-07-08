@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">  Furro </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+</nav>
+
+<!-- 🟡 Static Banner Section (replacing carousel) -->
+<div class="hero-banner">
+  <div class="banner-content">
+    <h1>Dog Care Tips</h1>
+    <p>Your trusted place to learn and care for your dog companions.</p>
+    <button>Explore Now</button>
+  </div>
+</div>
+
+<h1 style="text-align:center; margin-top: 40px;" data-aos="fade-up">Dog Care Tips</h1>
+
+<div class="accordion" data-aos="fade-up">
+
+  <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+    <div class="accordion-header">Vaccination Schedule <span>▼</span></div>
+    <div class="accordion-content">
+      <ul>
+        <li>Start vaccines at 6-8 weeks</li>
+        <li>Booster every 3–4 weeks until 16 weeks</li>
+        <li>Rabies shot by 12–16 weeks (law dependent)</li>
+        <li>Yearly boosters for core vaccines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+    <div class="accordion-header">Grooming Tips <span>▼</span></div>
+    <div class="accordion-content">
+      <ul>
+        <li>Brush your dog’s coat 2–3 times weekly</li>
+        <li>Clean ears gently every week</li>
+        <li>Trim nails once a month</li>
+        <li>Use dog-specific shampoo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+    <div class="accordion-header">Training Tips <span>▼</span></div>
+    <div class="accordion-content">
+      <ul>
+        <li>Start obedience training early</li>
+        <li>Use treats and praise as reward</li>
+        <li>Keep sessions short and consistent</li>
+        <li>Socialize puppies with other dogs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="accordion-header">Environment & Safety <span>▼</span></div>
+    <div class="accordion-content">
+      <ul>
+        <li>Provide fresh air and shade outdoors</li>
+        <li>Keep home free of dog-toxic items</li>
+        <li>Secure fences and gates</li>
+        <li>Provide a calm sleeping spot</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+    <div class="accordion-header">Nutritional Plan <span>▼</span></div>
+    <div class="accordion-content">
+      <ul>
+        <li>Feed 2–3 meals per day for puppies</li>
+        <li>Choose high-quality dog food</li>
+        <li>Always provide clean water</li>
+        <li>Avoid table scraps and sweets</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website .</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs-breed1.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  // Accordion JS
+  const accordions = document.querySelectorAll('.accordion-header');
+  accordions.forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

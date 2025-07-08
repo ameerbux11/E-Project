@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<div class="row" style="margin:auto">
+<div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Whippet</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">United Kingdom</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Medium</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Black</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Hound (AKC:1888), Sighthound &amp; Pariah (UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Hypoallergenic</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Affectionate, Friendly, Gentle, Intelligent</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">19 - 22 inches (47 - 56 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">	25 - 45 pounds (11 - 21 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Europe</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Whippet is a greyhound in miniature, the whippet is among the sleekest of dogs, with a curvaceous, streamlined silhouette, long legs and a lean physique. It is the ultimate sprinter, unsurpassed by any other breed in its ability to accelerate to top speed and to twist and turn with unequaled agility. The whippet is a lightweight version of the greyhound, with an especially supple top-line and powerful hindquarters enabling it to execute the double-suspension gallop at its most extreme. It is square or slightly longer than tall. The gait is low and free-moving. The expression is keen and alert.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Whippet was developed at the end of the 19th century through crossing among the Greyhound, the Italian Greyhound, and another terrier type dog. Its name derives from the expression whip it, meaning “to move quickly.” The Whippet is an outstanding track racer over short distances, reaching speeds of up to 37 miles per hour (60 km per hour), reaching those speeds in seconds! Coursing these dogs was an entertaining form of gambling for the lower classes in England and the Whippet was nicknamed the poor man’s racehorse. The Whippet was recognized by AKC in 1888 and by the English Kennel Club in 1891. Some of the Whippet's talents include: hunting, sighting, watchdog, racing, agility and lure coursing.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/Whippet puppy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="go-back-container">
+  <a href="dogs-breed4.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

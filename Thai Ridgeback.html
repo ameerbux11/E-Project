@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+ <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro   </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<div class="row" style="margin:auto">
+  <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Thai Ridgeback</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">Thailand</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Medium</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Black</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Hound, Sighthound &amp; Pariah (UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Smartest</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Familial 
+ Independent
+ Intelligent 
+ Loyal</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">22-24 inches (56-60 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">51-75 pounds (23-34 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Asia</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Thai Ridgeback is a medium-sized pariah-type dog, with a wedge-shaped head, prick ears, and a short, smooth coat. The length of body from point of buttocks to point of sternum is about 10 percent longer than the height measured at the withers. The depth of chest is equal to the length of the foreleg. The tail is carried vertically or curved like a sickle. This breed is characterized by a ridge of hair growing in the opposite direction to the rest of the coat. This ridge starts at the withers and extends down the spine to the top of the pelvis bones.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The origin of the Thai Ridgeback is unknown, but the breed developed in eastern Thailand, where the breed was kept pure by isolation. Descriptions of the breed can be found in written references dating back to the 17th century. The breed’s name comes from a ridge of hair that runs along the dog’s back, a trait found in only three breeds of purebred dogs. The Thai Ridgeback was used for hunting, and as a guard dog. Today the breed is still very rare outside of Thailand. The Thai Ridgeback was recognized by the United Kennel Club on January 20, 1996.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/ThaiRidgeback puppi.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="go-back-container">
+  <a href="dogs-breed4.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog  Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

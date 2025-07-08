@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; }
+
+  </style>
+</head>
+<body>
+  <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<div class="row" style="margin:auto">
+   <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Cane Corso</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">Italy</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Large</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Black</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Working (AKC:2010), Guardian Dogs (UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Best guard</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Cheerful, Courageous, Loyal, Quiet, Social</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">24-27 inches (64-68 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">99-110 pounds (45-50 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Europe</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Cane Corso also known as the Italian Mastiff, is a large Italian breed of dog, for years valued highly in Italy as a companion, Guard dog and hunter.
+Intelligent, the Cane Corso is easily trained. As a large and athletic breed, they need a lot of exercise. For this breed to be a well-balanced member of society, he needs extensive socialization and training from an early age. He does not do well crated all day and should have a fenced in yard for adequate exercise. They are affectionate to their owner and bond closely with children and family. The Corso requires substantial time invested and owners with an understanding of dog hierarchy.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Cane Corso Italiano (also known as the ‘Italian Mastiff’ or ‘Cane Corso Mastiff’) is a war and hunting dog which originated in southern Italy. It likely descends from the Neapolitan mastiff and the Roman ‘Canis Pugnax’, a powerful war dog, though the Cane Corso Italiano is a lighter, more agile breed which was used by troops for hunting or as an auxiliary force (‘Corso’ comes from the Latin for ‘guardian’). The Cane Corso Italiano was also used in bull baiting, a gambling ‘sport’ wherein one or more dogs were matched up against a chained bull. The Cane Corso Italiano had declined to near extinction by the 1980’s, but since then an intentional effort to rescue the breed has increased the dog’s numbers substantially. It is most prominent in southern Italy.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/CaneCorso pupy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="go-back-container">
+  <a href="dogs-breed2.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website .</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

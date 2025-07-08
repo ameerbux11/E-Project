@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro   </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+<div class="row" style="margin:auto">
+ <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Icelandic Sheepdog</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">United States</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Large</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Others</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Working (AKC:1937), Guardian Dogs (UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Smartest</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Affectionate, Faithful, Intelligent, Loyal</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">24-28 inches (61–71 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">85-110 pounds (38–50 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Europe</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">Finnish Lapphunds, with their luscious coat, sweet spitz-like face, and profusely coated tail curving over the back, are instantly recognizable as Nordic dogs. Built for hard work in frigid temperatures north of the Arctic Circle, Lappies stand about 20 inches at the shoulder and are surprisingly powerful for their size, with well-developed muscles and substantial bone beneath a double coat that comes in many colors and patterns. Lappies are agile dogs of effortless movement, capable going from a trot to full gallop in a second flat.
+ Few Lappies today in America have seen a reindeer, but they adapt well to other kinds of work, including obedience, agility, tracking therapy, and herding other types of livestock. When working, Finnish Lapphunds are agile, alert and noisy. While interacting with people, however, the breed is calm, friendly, and very submissive. Lappy puppies are adorable, but new owners should take care to remember that a small puppy grows up quickly and needs to learn good habits early on. Socialization, puppy classes and basic training will help him learn those habits.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The region extending across northern Norway, Sweden and Finland is sometimes called Lapland, and it is home of the Sami people. For centuries, the Sami depended on the reindeer for food. Life in this harsh environment would not have been possible without the Spitz dogs which helped the Sami hunt, and later herd, the reindeer. Eventually, these herding Spitz type dogs developed into three breeds, the Swedish Lapphund, the Lapponian Herder, and the Finnish Lapphund. The Finnish Lapphund is the original native breed, and is still used today as a herding dog. The breed first came to the United States in 1987.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/IcelandicSheepdog pupy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="go-back-container">
+  <a href="dogs-breed1.html" class="go-back-link">← Back To Breed</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro Website .</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

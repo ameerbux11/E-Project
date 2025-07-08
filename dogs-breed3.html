@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro</div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+</nav>
+<header>
+  <h1>All Dog Breeds</h1>
+</header>
+
+<div class="container">
+  <!-- Sidebar Filters -->
+ <section class="filter-section">
+  <form id="filterForm" class="filter-box">
+    <h3>Filter Breeds</h3>
+
+    <div class="filter-group">
+      <label>Size</label>
+      <div>
+        <label><input type="radio" name="size" value="Small"> Small</label>
+        <label><input type="radio" name="size" value="Medium"> Medium</label>
+        <label><input type="radio" name="size" value="Large"> Large</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Character</label>
+      <div>
+        <label><input type="radio" name="character" value="Hypoallergenic"> Hypoallergenic</label>
+        <label><input type="radio" name="character" value="Fluffy"> Fluffy</label>
+        <label><input type="radio" name="character" value="Smartest"> Smartest</label>
+        <label><input type="radio" name="character" value="Best guard"> Best guard</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Color</label>
+      <div>
+        <label><input type="radio" name="color" value="White"> White</label>
+        <label><input type="radio" name="color" value="Black"> Black</label>
+        <label><input type="radio" name="color" value="Others"> Others</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>Geography</label>
+      <div>
+        <label><input type="radio" name="geo" value="Asia"> Asia</label>
+        <label><input type="radio" name="geo" value="North America"> North America</label>
+        <label><input type="radio" name="geo" value="Europe"> Europe</label>
+      </div>
+    </div>
+
+    <div class="filter-buttons">
+      <button type="submit">Apply</button>
+      <button type="reset" id="resetFilter">Reset</button>
+    </div>
+  </form>
+</section>
+
+
+
+
+  <!-- Breed Gallery -->
+  <section class="gallery">
+    <div class="card"data-size="large" data-character="Smartest" data-color="Black" data-geo="Europe">
+      <img src="img/Jämthund.jpg" alt="Jämthund">
+      <h4>Jämthund</h4>
+      <a href="Jämthund.html">Read More</a>
+    </div>
+    <div class="card"data-size="Large" data-character="Best guard" data-color="white" data-geo="North America">
+      <img src="img/Komondor.jpg" alt="Komondor">
+      <h4>Komondor</h4>
+      <a href="Komondor.html">Read More</a>
+    </div>
+    <div class="card"data-size="Medium" data-character="Hypoallergenic" data-color="Black" data-geo="Europe">
+      <img src="img/LapponianHerder.jpg" alt="LapponianHerder">
+      <h4>LapponianHerder</h4>
+      <a href="Lapponian Herder.html">Read More</a>
+    </div>
+    <div class="card"data-size="Medium" data-character="Smartest" data-color="others" data-geo="Europe">
+      <img src="img/AiredaleTerrier.jpg" alt="AiredaleTerrier">
+      <h4>AiredaleTerrier</h4>
+      <a href="AiredaleTerrier.html">Read More</a>
+    </div>
+    <div class="card"data-size="Small" data-character="Smartest" data-color="Black" data-geo="Europe">
+      <img src="img/MiniatureSchnauzer.jpg" alt="MiniatureSchnauzer">
+      <h4>MiniatureSchnauzer</h4>
+      <a href="Miniature Schnauzer.html">Read More</a>
+    </div>
+    <div class="card"data-size="Small" data-character="Hypoallergenic" data-color="others" data-geo="Asia">
+      <img src="img/MiniatureSharPei.jpg" alt="MiniatureSharPei">
+      <h4>MiniatureSharPei</h4>
+      <a href="Miniature SharPei.html">Read More</a>
+    </div>
+    <div class="card"data-size="Medium" data-character="Best guard" data-color="others" data-geo="North America">
+      <img src="img/MountainCur.jpg" alt="MountainCur">
+      <h4>MountainCur</h4>
+      <a href="Mountain Cur.html">Read More</a>
+    </div>
+    <div class="card"data-size="Small" data-character="Fluffy" data-color="others" data-geo="Europe">
+      <img src="img/NorwegianLundehund.jpg" alt="NorwegianLundehund">
+      <h4>NorwegianLundehund</h4>
+      <a href="Norwegian Lundehund.html">Read More</a>
+    </div>
+    <div class="card"data-size="Smallest" data-character="Smartest" data-color="others" data-geo="Europe">
+      <img src="img/Pomeranian.jpg" alt="Pomeranian">
+      <h4>Pomeranian</h4>
+      <a href="Pomeranian.html">Read More</a>
+    </div>
+  </section>
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <div class="row">
+    <div class="content_paging">
+      <ul class="pagination-list">
+        <li class="page-item"><a class="page-link" href="dogs-breed2.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed1.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed3.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed4.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="dogs-breed4.html">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog companion hub.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="script.js">
+//   const slide = document.getElementById('carouselSlide');
+//   let index = 0;
+
+//   setInterval(() => {
+//     index = (index + 1) % 3;
+//     slide.style.transform = `translateX(-${index * 100}%)`;
+//   }, 4000);
+</script>
+
+</body>
+</html>

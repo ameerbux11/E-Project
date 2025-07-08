@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; }
+
+  </style>
+</head>
+<body>
+  <nav class="custom-navbar">
+  <div class="nav-left">
+    <img src="img/logo 1.png" height="90px" alt="">
+    <div class="logo">Furro </div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dogs-breed1.html">Breeds</a>
+    <a href="dog care.html">Dog Care</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="row" style="margin:auto">
+  <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">Miniature Schnauzer</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">Germany</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Small</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Black</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Terrier (AKC:1926)(UKC)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Smartest</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Alert
+ Fearless
+ Friendly
+ Spirited</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">14 inches (35.6 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">11-18 pounds (5.0-8.2 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Europe</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Miniature Schnauzer is a robust, sturdily built terrier of nearly square proportion. It was developed as a ratter and is quick and tough. Its gait displays good reach and drive. Its coat is double, with a close undercoat, and hard, wiry, outer coat which is longer on the legs, muzzle and eyebrows. Its facial furnishings add to its keen expression.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Miniature Schnauzer is a German breed. During the years around the turn of the century, both smooth German Pinscher and coarse-haired Schnauzer pups appeared in the same litters. The German Pinscher Schnauzer Club initiated a policy requiring proof of three generations of pure coarse-haired Schnauzer coats for registration. This quickly helped set type and made them a distinct breed from the German Pinscher. 
+ These Schnauzers were given the name Standard Schnauzer. Miniature Schnauzers were developed by crossing small Standard Schnauzers with the Affenpinscher and possibly the Poodle. The Schnauzer name derived from the German word Schnauze, which means muzzle. It was used as a ratter and still retains the ability, but is mostly a companion dog today. Some of the Schnauzer's talents include: hunting, tracking, ratter, watchdog, competitive obedience and performing tricks.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/MiniatureSchnauzer pupy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="go-back-container">
+  <a href="dogs-breed3.html" class="go-back-link">← Back To Breed</a>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog  Furro Website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>

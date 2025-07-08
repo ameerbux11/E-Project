@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Carousel with Captions</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; }
+
+  </style>
+</head>
+<body>
+   <nav class="custom-navbar">
+  <div class="nav-left">
+    <div class="logo">Furro</div>
+  </div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#breeds">Breeds</a>
+    <a href="#care">Dog Care</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    
+  </div>
+</nav>
+
+  <div class="row " style="margin:auto">
+      <div class="container align-content-center align-items-center" id="content_item_detail">
+
+        <h2 id="dog_name" style="text-align: center;">ShibaInu</h2>
+
+        <table class="table table-borderless  table-responsive">
+          <thead>
+            <tr>
+              <th colspan="2" id="dog_pic"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Origin</td>
+              <td id="dog_origin">Japan</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td id="dog_size">Medium</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td id="dog_color">Others</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td id="dog_type">Purebred</td>
+            </tr>
+            <tr>
+              <td>Breed Group</td>
+              <td id="dog_breedgroup">Non Sporting (AKC:1992)</td>
+            </tr>
+            <tr>
+              <td>Character</td>
+              <td id="dog_character">Fluffy</td>
+            </tr>
+            <tr>
+              <td>Temperament</td>
+              <td id="dog_temperament">Alert 
+ Charming 
+ Confident 
+ Loyal</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td id="dog_height">14-16 inches (36-41 cm)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td id="dog_weight">18-25 pounds (8-11 kg)</td>
+            </tr>
+            <tr>
+              <td>Geography</td>
+              <td id="dog_geography">Asia</td>
+            </tr>
+            <tr>
+              <td>Overview</td>
+              <td id="dog_overview" style="text-align: justify;">The Shiba Inu is moderately compact, being slightly longer than it is tall. It has typical traits of dogs from Northern heritage: small erect ears, thick fur, powerful body and curled tail. Its expression is bold, spirited and good-natured. The gait is light, quick and agile, with an effortless, smooth stride. The double coat consists of a strong straight outer coat with a soft undercoat, imparting great insulation. These traits enabled the shiba to hunt small game through dense cover.</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td id="dog_history" style="text-align: justify;">The Shiba is the smallest of the Japanese native breeds, which include the Kai Inu, Hokkaido Inu, Kishu Inu, Shikoku Inu, Tosa Inu and the Akita Inu. Despite its smaller size it was bred to hunt small wild game, bear, boar and to flush birds. The name Shiba means, both small and brushwood in Japanese. It may have been named after the terrain the dogs hunted in or the color of the Shiba's coat, or perhaps the dog's size. 
+ The word Inu means dog. As with many breeds, the second world war nearly did the breed in. After the war was over, several breeding programs worked to bring the breed back to safe numbers. The Shiba is one of the most popular breeds in Japan today and is gaining numbers in the USA. The Shiba Inu was recognized by the AKC in 1992. Some of the Shiba's talents include: hunting, tracking, watchdog, guarding, agility and performing tricks.</td>
+            </tr>
+            <tr>
+              <td>Gallery</td>
+              <td id="dog_galary"><img src="pupies/ShibaInu puppy.jpg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Furro</h2>
+      <p>Your trusted dog Furro website.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dog breed.html">Breeds</a></li>
+        <li><a href="dog care.html">Dog Care</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Furro. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script>
+  const slide = document.getElementById('carouselSlide');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>
